@@ -6,14 +6,16 @@ let dtl_tab_area = [
     `<div class="tab_detail" id="tab_detail">
             <div class="item_no">상품번호 326251</div>
             <div class="dtl_img_area">
-                <img src="../img/item_img/ETMON/326251/ETMON_326251_(1).jpg" alt="">
-                <img src="../img/item_img/ETMON/326251/ETMON_326251_(2).jpg" alt="">
-                <img src="../img/item_img/ETMON/326251/ETMON_326251_(3).jpg" alt="">
-                <img src="../img/item_img/ETMON/326251/ETMON_326251_(4).jpg" alt="">
-                <img src="../img/item_img/ETMON/326251/ETMON_326251_(5).jpg" alt="">
-                <img src="../img/item_img/ETMON/326251/ETMON_326251_(6).jpg" alt="">
-                <img src="../img/item_img/ETMON/326251/ETMON_326251_(7).jpg" alt="">
-                <img src="../img/item_img/ETMON/326251/ETMON_326251_(8).jpg" alt="">
+                <img src="../img/detail/dtl_area_img/1.jpg" alt="">
+                <img src="../img/detail/dtl_area_img/2.jpg" alt="">
+                <img src="../img/detail/dtl_area_img/3.jpg" alt="">
+                <img src="../img/detail/dtl_area_img/4.jpg" alt="">
+                <img src="../img/detail/dtl_area_img/5.jpg" alt="">
+                <img src="../img/detail/dtl_area_img/6.jpg" alt="">
+                <img src="../img/detail/dtl_area_img/7.jpg" alt="">
+                <img src="../img/detail/dtl_area_img/8.jpg" alt="">
+                <img src="../img/detail/dtl_area_img/9.jpg" alt="">
+                <img src="../img/detail/dtl_area_img/10.jpg" alt="">
             </div>
             <div class="tab_dtl_desc">
             <div class="item_desc_top">
@@ -24,7 +26,7 @@ let dtl_tab_area = [
                 </ul>
                 <ul>
                     <li>브랜드</li>
-                    <li>ETMON</li>
+                    <li>Siyazu</li>
                 </ul>
                 <ul>
                     <li>원산지</li>
@@ -196,82 +198,110 @@ $('.dtl_menu > li').click(function(){
 /////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////
 
-// 각 옵션이 모두 체크되면, 수량+상품금액 박스가 display : block
+
+// 내꺼 시작
+let each_price = document.getElementById('each_price');
+let e_price_v = +161100;
+$('#each_price').text(e_price_v.toLocaleString("ko"))
 
 let color_selc =  false;
 let size_selc =  false;
 
-    $('.color_icon > input').click(function(){
-        color_selc = true;
-        optCheck();
-    })
-    
-    $('.size_icon > input').click(function(){
-        size_selc = true;
-        optCheck();
-    })
-
+                
 function optCheck(){
-    
     if(color_selc == true && size_selc == true){
-        $('.item_count_box').css({
-            display : 'block'
-        });
 
+        color_selc = false;
+        size_selc = false;
+
+// console.log("3: " + color_selc, size_selc)
+        let qty_box_append =`<div class="item_count_box">
+                            <div class="opt_v_txt"></div>
+                            <div class="opt_box_R">
+                                <div class="opt_qty">
+                                    <input type="button" value="-" class="o_qty o_qty_btn_L">
+                                    <input type="text" value="1" class="o_qty qty_v">
+                                    <input type="button" value="+" class="o_qty o_qty_btn_R">
+                                </div>
+                                <div class="t_price">${e_price_v.toLocaleString('ko')}</div>
+                                <div class="close">X</div>
+                            </div>
+                        </div>`;
+
+
+        $('.item_option').append(qty_box_append);
+        
+        
         let color_val = $("input:radio[name='color']:checked").val();
         let size_val = $("input:radio[name='size']:checked").val();
-        $('.opt_v_txt').text(color_val +"  /  "+size_val)
+// console.log("4: " + color_selc, size_selc)
+        $('.opt_v_txt').eq($('.opt_v_txt').length-1).text(color_val +"  /  "+size_val)
 
-        real_t_price.innerText = t_price_v.toLocaleString("ko");;
+        total_price()
+        // $('.real_t_price').text(t_price_v.toLocaleString("ko"))
     }
-    else {
-        $('.item_count_box').css({
-            display : 'none'
-        });
-    }
-    
-    
-};
-
-/////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////
-
-// 플러스/ 마이너스 버튼 누르면 수량 및 구매금액이 변동되는 기능
-
-
-let each_price = document.getElementById('each_price');
-let e_price_v = +218120;
-each_price.innerText = e_price_v.toLocaleString("ko");
-
-let t_price = document.getElementsByClassName('t_price')[0];
-let t_price_v = e_price_v;
-t_price.innerText = t_price_v.toLocaleString("ko");;
-
-let real_t_price = document.getElementById('real_t_price')
-let real_t_price_v = t_price_v.toLocaleString("ko");;
-
-let qty_v = document.getElementsByClassName('qty_v')[0];
-let qty_chk = true
-
-if(qty_chk){
-$('.o_qty_btn_R').click(function(){
-    if(qty_v.value >= 0){
-    qty_v.value = Number(qty_v.value)+1
-    }
-
-    t_price_v = Number(e_price_v) * qty_v.value
-    t_price.innerText = t_price_v.toLocaleString("ko");;
-    real_t_price.innerText = t_price_v.toLocaleString("ko");;
-});
-$('.o_qty_btn_L').click(function(){
-    if(qty_v.value > 0){
-    qty_v.value = Number(qty_v.value)-1
-    }
-    t_price_v = Number(e_price_v) * qty_v.value
-    t_price.innerText = t_price_v.toLocaleString("ko");;
-    real_t_price.innerText = t_price_v.toLocaleString("ko");;
-})
 }
+
+$('.color_icon > input').click(function(){
+    color_selc = true;
+// console.log("1: " + color_selc, size_selc)
+    optCheck();
+})
+
+$('.size_icon > input').click(function(){
+    size_selc = true;
+// console.log("2: " + color_selc, size_selc)
+    optCheck();
+})
+
+$(document).on('click','.o_qty_btn_R',function(){ 
+    let qty_v = +$(this).prev().val() + 1;
+
+    // $(this).prev().val(qty_v)
+    // $(this).parent().next().text((+e_price_v * qty_v).toLocaleString('ko'))
+
+    inner_price(qty_v, $(this).prev(), $(this).parent().next())
+    // inner_price(qty_v)
+});
+
+$(document).on('click','.o_qty_btn_L',function(){ 
+    let qty_v = +$(this).next().val() - 1;
+
+    // $(this).next().val(qty_v)
+    // $(this).parent().next().text((+e_price_v * qty_v).toLocaleString('ko'))
+
+    inner_price(qty_v, $(this).next(), $(this).parent().next())
+    // inner_price(qty_v)
+});
+
+function inner_price(qty_v, el_this, el_parent){
+    el_this.val(qty_v)
+    el_parent.text((+e_price_v * qty_v).toLocaleString('ko'))
+  
+    total_price()
+}
+
+function total_price() {
+    let sum = 0;
+    for(let i=0; i< $('.item_count_box').length; i++) {
+        sum += +$('.t_price').eq(i).text().replace(",","");
+    }
+    console.log(sum.toLocaleString('ko'))
+    $('#real_t_price').text(sum.toLocaleString('ko'))
+}
+
+// 내꺼 끝
+
+
+
+// x 버튼 누르면 선택한 상품 옵션 정보 삭제
+
+$(document).on('click', '.close' ,function(){
+    console.log("삭제")
+    $(this).parent().parent().remove()
+    total_price()
+})
+
 
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -306,57 +336,8 @@ like.addEventListener('click', function(){
     else{
         like.classList.remove('heart');
         like.classList.add('heart_fill');
-
         }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// /////////////////////////////////////////////////////
-// /////////////////////////////////////////////////////
-// /////////////////////////////////////////////////////
-// /////////////////////////////////////////////////////
-// 작은 이미지 선택하면 큰 이미지 변동되는 기능
-
-
-
-
 
 
 

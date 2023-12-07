@@ -13,7 +13,6 @@
 .join_input{
     width: 480px;
     overflow: hidden;
-    /* background-color: yellow; */
     margin: 0 auto;
 }
 .join_agr_box{
@@ -42,6 +41,11 @@
 
 .chk_mkt_all > li{
     display: inline-block;
+}
+.input_phn_no > input::-webkit-outer-spin-button,
+.input_phn_no > ::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* 회원가입 폼 */
@@ -134,10 +138,7 @@
     color: #383737;
 }
 .input_sex{
-    /* background-color: red; */
     display: flex;
-    
-
 }
 .join_mkt_box{
     margin: 50px 0;

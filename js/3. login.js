@@ -11,3 +11,8 @@ $('#login_btn').click(function(){
     });
 
 })
+
+/*  회원가입 버튼 누르면 회원가입 링크로 이동 */
+$('#join_btn').click(function(){
+    location.replace("../HTML/5.%20join1.html")
+})

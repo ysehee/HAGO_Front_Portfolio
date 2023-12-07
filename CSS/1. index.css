@@ -1,18 +1,15 @@
 #wrap{
     margin: 0;
 }
-
 /* 헤더 */
 .header{
     width: 1400px;
     height: 100px;
-    /* background-color: rgb(204, 241, 186); */
     padding: 10px;
     box-sizing: border-box;
     margin: 0 auto;
 
     position: relative;
-
 }
 .logo{
     width: 120px;
@@ -69,7 +66,6 @@
 .quick_menu{
     width: 380px;
     height: 80px;
-    /* background-color: pink; */
     font-size: 0;
 
     position: absolute;
@@ -82,7 +78,6 @@
 .quick_menu > li{
     width: calc(100% / 4);
     height: 100%;
-    /* background-color: blue; */
     font-size: 11px;
     text-align: center;
     line-height: 8px;
@@ -114,7 +109,6 @@
 .nav_ul{
     width: 100%;
     height: 100%;
-    /* background-color: yellow; */
     font-weight: 400;
     font-size: 15px;
     color: #6b6a6a;
@@ -166,25 +160,15 @@
     display: none;
 }
 
-/* .null{
-    font-weight: ;
-    cursor: pointer;
-} */
-
-
-
-
 /* sec1, 메인배너 */
 .main_banner{
     overflow: hidden;
     position: relative;
 
-    /* background-color: yellow; */
 }
 .main_banner_img{
     width: 100%;
     padding-top: 600px;
-    /* background: url(../img/main_banner/main_banner_\(1\).jpg) no-repeat center / cover; */
 }
 .m_banner_page{
     width: 80px;
@@ -207,7 +191,6 @@
 .container{
     width: 1500px;
     margin: 0 auto;
-    /* background-color: antiquewhite; */
 }
 
 /* 저스트 초이스 */
@@ -241,11 +224,9 @@
     color: #999;
     font-weight: 700;
 }
-/* ///////////////////////////////// */
 .just_item_box{
     padding-bottom: 480px;
     overflow: hidden;
-    /* background-color: skyblue; */
     position: relative;
 }
 
@@ -253,7 +234,6 @@
     width: 100%; 
     height: 100%;
     overflow: hidden;
-    /* background-color: rgb(193, 238, 212); */
     margin: 0 auto;
 
     display: flex;
@@ -265,7 +245,6 @@
     top: 0;
     left: 100%;
 
-    /* transition: all 1s; */
 }
 
 .just_box_women1{
@@ -300,7 +279,6 @@
 .just_item{
     width: calc((100% - (20px * 4))/ 5);
     height: 100%;
-    /* border: 3px solid; */
     box-sizing: border-box;
 }
 .just_img{
@@ -318,7 +296,6 @@
     transition: all 1.5s;
 }
 
-/* ///////////////////////////////////////////////////////// */
 .just_desc{
     height: 20%;
     padding-top: 7px;
@@ -395,7 +372,6 @@
 /* 스포트라이트 */
 .spotlight_box{
     width: 100%;
-    /* border: 1PX solid; */
 
     margin-top: 100px;
     margin-bottom: 30px;
@@ -412,9 +388,7 @@
 }
 .spotlight_item_box{
     width: 100%;
-    /* height: 500px; */
     overflow: hidden;
-    /* background-color: rgb(193, 238, 212); */
 
     display: flex;
     justify-content: space-between;
@@ -422,7 +396,6 @@
 }
 .spotlight_item{
     width: calc((100% - (20px * 2))/ 3);
-    /* height: 100%; */
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -444,7 +417,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    /* gap: 10px; */
 }
 .spotlight_item_title{
     font-size: 20px;
@@ -499,11 +471,9 @@
     color: #999;
     font-weight: 700;
 }
-/* ///////////////////////////////// */
 .new_in_item_box{
     padding-bottom: 480px;
     overflow: hidden;
-    /* background-color: skyblue; */
     position: relative;
 }
 
@@ -511,7 +481,6 @@
     width: 100%; 
     height: 100%;
     overflow: hidden;
-    /* background-color: rgb(193, 238, 212); */
     margin: 0 auto;
 
     display: flex;
@@ -522,8 +491,6 @@
     position: absolute;
     top: 0;
     left: 100%;
-
-    /* transition: all 1s; */
 }
 
 .new_in_box_women1{
@@ -558,7 +525,6 @@
 .new_in_item{
     width: calc((100% - (20px * 4))/ 5);
     height: 100%;
-    /* border: 3px solid; */
     box-sizing: border-box;
 }
 .new_in_img{
@@ -575,8 +541,6 @@
     transform: scale(1.1);
     transition: all 1.5s;
 }
-
-/* ///////////////////////////////////////////////////////// */
 .new_in_desc{
     height: 20%;
     padding-top: 7px;
@@ -642,8 +606,6 @@
 }
 
 
-
-
 /* HAGO 단독판매 (이미지슬라이드) exclusive */
 
 .exclusive{
@@ -654,6 +616,7 @@
     padding-top: 83px;
     overflow: hidden;
 
+    position: relative;
 }
 .excl_title{
     width: 100%;
@@ -668,9 +631,18 @@
 .excl_slide_box{
     width: 100%;
     height: 500px;
-    /* background-color: rgb(193, 238, 212); */
 
     position: relative;
+}
+.excl_b_pan{
+    width: 84.5%;
+    height: 80%;
+    background: #003148;
+    opacity: 0.7;
+
+    position: absolute;
+    left: 115px;
+    top: 120px;
 }
 .excl_item{
     width: calc(100% / 5);
@@ -791,20 +763,10 @@
     cursor: pointer;
 }
 
-.excl_b_pan{
-    width: 100%;
-    height: 100%;
-    background-color: blue;
-}
-
-
 
 
 
 /* 뉴 에디션 new edition */
-.new_ed_box{
-    /* border: 10px solid; */
-}
 .new_ed{
     width: 100%;
     padding: 50px 0;
@@ -830,10 +792,6 @@
 .new_ed_desc{
     width: 25%;
 }
-/* .new_ed_desc_top{
-    position: absolute;
-    top: 0;
-} */
 .new_ed_title{
     font-size: 25px;
     font-weight: 900;
@@ -866,7 +824,6 @@
     display: flex;
 
     position: relative;
-    /* background-color: pink; */
 }
 
 
@@ -930,7 +887,6 @@
     height: 40px;
     border-radius: 50%;
     background-color: #fff;
-    /* border: 1px solid; */
     cursor: pointer;
 
     position: absolute;
@@ -1054,7 +1010,6 @@
     padding-right: 0;
 }
 
-/*  */
 
 .f_hago_info{
     margin-top: 50px;

@@ -1,7 +1,6 @@
 .login_box{
     width: 450px;
     overflow: hidden;
-    /* background-color: yellow; */
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -43,9 +42,6 @@
     color: #14b4c1;
     font-weight: 900;
 }
-
-
-
 /* 로그인 / 회원가입 버튼 */
 .multi_btn_box{
     overflow: hidden;
@@ -78,12 +74,10 @@
 }
 
 
-
 /* 계정 찾기 /  아이디 찾기 */
 .find_acc{
     display: inline-block;
     font-size: 0;
-    /* background-color: red; */
 
     display: flex;
     justify-content: center;
@@ -105,7 +99,6 @@
 /* 소셜 아이콘 */
 .socl_icon_box{
     width: 120px;
-    /* overflow: hidden;/ */
     margin: 0 auto;
     margin-top: 30px;
 

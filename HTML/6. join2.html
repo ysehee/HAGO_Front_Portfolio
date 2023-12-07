@@ -6,20 +6,19 @@
     <title>pf_회원가입2_라이징 패션 플랫폼 - 하고</title>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <link rel="icon" type="image/png" href="https://image.hago.kr/mall/ui/pc/common/favicon.ico">
+    <link rel="stylesheet" href="../CSS/common.css">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/1. index.css">
-    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../CSS/00.swiper.css">
     <link rel="stylesheet" href="../CSS/4. join1.css">
     <link rel="stylesheet" href="../CSS/5 .join2.css">
-    <link rel="stylesheet" href="../CSS/00.swiper.css">
 </head>
 <body>
     <div id="wrap">
         <!-- 헤더 -->
-        <!-- 헤더 -->
         <header class="header">
             <div class="logo">
-                <a href="file:///F:/KH_ED/HAGO_pf_%EC%9C%A4%EC%84%B8%ED%9D%AC/HTML/1.%20index.html">로고</a>
+                <a href="../HTML/1.%20index.html">로고</a>
             </div>
             <div class="search_box">
                 <input type="text" class="searh_bar">
@@ -339,6 +338,7 @@
                             <div class="input_id"><input type="text" placeholder="아이디를 입력하세요" id="user_id"  class="user_id" required></div>
                             <div class="id_chk">아이디 중복확인</div>
                         </li>
+                        <p class="id_chk_text"></p>
                     </ul>
                     <ul class="join_ul join_ul_pw">
                         <p>비밀번호</p>
@@ -350,7 +350,7 @@
                     <ul class="join_ul join_ul_pw_chk">
                         <p>비밀번호 확인</p>
                         <li>
-                            <div class="input_pw_chk"><input type="password" placeholder="비밀번호를 한번 더 입력하세요" id="user_pw_chk"  class="user_id" required></div>
+                            <div class="input_pw_chk"><input type="password" placeholder="비밀번호를 한번 더 입력하세요" id="user_pw_chk"  class="user_pw" required></div>
                         </li>
                     </ul>
                     <ul class="join_ul join_ul_name">
@@ -358,6 +358,7 @@
                         <li>
                             <div class="input_name"><input type="text" id="user_name" class="user_name" required></div>
                         </li>
+                        <p class="name_chk_text"></p>
                     </ul>
                     <ul class="join_ul join_ul_birth">
                         <p>생년월일(선택)</p>
@@ -370,8 +371,9 @@
                     <ul class="join_ul join_ul_phn_no">
                         <p>휴대폰번호</p>
                         <li>
-                            <div class="input_phn_no"><input type="text" id="user_phn_no" class="user_phn_no" required></div>
+                            <div class="input_phn_no"><input type="number" id="user_phn_no" class="user_phn_no" required></div>
                         </li>
+                        <p class="phn_no_chk_text"></p> 
                     </ul>
                     <ul class="join_ul join_ul_sex">
                         <p>성별(선택)</p>
@@ -485,30 +487,6 @@
     <script src="../js/1. index.js"></script>
     <script src="../js/4. join.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <!-- swiper -->
-
-    <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      ...
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
-  </div>
-
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
