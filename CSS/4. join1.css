@@ -1,0 +1,75 @@
+.join_1{
+    width: 60%;
+    margin: 0 auto;
+
+}
+.join_title{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.join_step{
+    width: 700px;
+    height: 60px;
+    /* border-bottom: 2px solid #cfcfcf; */
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    display: flex;
+
+}
+.join_step1{
+    color: #14b4c1;
+    font-weight: 600 ;
+    border-bottom: 2px solid ;
+}
+.join_step2,
+.join_step3{
+    color: #cfcfcf;
+    border-bottom: 2px solid #cfcfcf;
+}
+
+.join_step > li{
+    width: calc(100% / 3);
+    line-height: 20px;
+}
+.join_step > li > div:first-child {
+    font-size: 13px;
+}
+.phn_ctf{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #062236;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 150px;
+
+    cursor: pointer;
+}
+.text_hello{
+    font-size: 20px;
+}
+.join_desc{
+    width: 700px;
+    margin: 0 auto;
+    line-height: 26px;
+    
+}
+.join_desc > p:nth-child(1){
+    margin-bottom: 15px;
+}
+.join_desc > p:nth-child(4),
+.join_desc > p:nth-child(5){
+    font-size: 12px;
+    line-height: 15px;
+}
+.join_desc > p > b{
+    font-size: 22px;
+    font-weight: 600
+}

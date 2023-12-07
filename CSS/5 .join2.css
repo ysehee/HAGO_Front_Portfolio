@@ -1,0 +1,166 @@
+.join_step2{
+    color: #14b4c1;
+    font-weight: 600 ; 
+    border-bottom: 2px solid ;
+}
+.join_step1,
+.join_step3{
+    color: #cfcfcf;
+    border-bottom: 2px solid #cfcfcf;
+}
+
+
+.join_input{
+    width: 480px;
+    overflow: hidden;
+    /* background-color: yellow; */
+    margin: 0 auto;
+}
+.join_agr_box{
+    width: 100%;
+    margin: 50px 0;
+    margin-bottom: 50px;
+}
+.chk_area{
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid;
+    margin: 0px auto;
+    line-height: 32px;
+    margin: 10px 0;
+
+}
+.chk_area > ul > li,
+.chk_agr_all > li{
+    display: inline-block;
+}
+.chk_area > ul > li:nth-child(3){
+    float: right;
+    box-sizing: border-box;
+}
+
+.chk_mkt_all > li{
+    display: inline-block;
+}
+
+/* 회원가입 폼 */
+.join_ul{
+    width: 100%;
+    margin-bottom: 15px;
+    line-height: 30px;
+
+
+}
+.join_form{
+    margin-bottom: 150px;
+    padding: 12px;
+}
+.join_form > ul > li{
+    height: 50px;
+    border:  1px solid;
+    box-sizing: border-box;
+    color: #787878;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.join_form > .join_ul_id > li{
+    border: none;
+}
+.join_form > .join_ul_birth > li{
+    height: 50px;
+    border:  none;
+    box-sizing: border-box;
+    font-size: 0;
+
+    display: block;
+}
+.join_ul > li > .input_sex > p {
+    width: 64px;
+    line-height: 50px;
+}
+.join_ul > li > .input_sex > input {
+    width: 20px;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+}
+.join_form > .join_ul_sex > li{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+
+    padding: 0 15px;
+}
+
+.join_ul_birth > li > select{
+    width: calc(100% / 3);
+    height: 100%;
+}
+.input_id{
+    width: calc(100% - 150px);
+    height: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.input_pw,
+.input_pw_chk,
+.input_name {
+    width: 100%;
+}
+
+.join_ul > li > div >  input{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+}
+
+.id_chk{
+    width: 150px;
+    height: 100%;
+    border:  1px solid;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    color: #383737;
+}
+.input_sex{
+    /* background-color: red; */
+    display: flex;
+    
+
+}
+.join_mkt_box{
+    margin: 50px 0;
+}
+.mkt_chk_desc {
+    margin: 5px 0;
+    font-size: 12px;
+    line-height: 15px;
+}
+.input_join_scs{
+    width: 130px;
+    height: 40px;
+    border:  1px solid;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+    background: #003148;
+    color: #fff;
+    cursor: pointer;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pf_상세페이지_라이징 패션 플랫폼 - 하고</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="icon" type="image/png" href="https://image.hago.kr/mall/ui/pc/common/favicon.ico">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/1. index.css">
+    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../CSS/2. detail.css">
+    <link rel="stylesheet" href="../CSS/00.swiper.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header class="header">
+            <div class="logo">
+                <a href="..//HTML/1.%20index.html">로고</a>
+            </div>
+            <div class="search_box">
+                <input type="text" class="searh_bar">
+                <div class="search_icon">
+                    <img src="../img/icon/search.svg" alt="">
+                </div>
+            </div>
+            <ul class="quick_menu">
+                <li class="q_login">
+                    <img class="qk_img" src="../img/icon/login.svg" alt="">
+                        <b>로그인</b>
+                </li>
+                <li class="q_join">
+                    <img class="qk_img" src="../img/icon/join.svg" alt="">
+                    <b>회원가입</b>
+                </li>
+                <li class="q_mypage">
+                    <img class="qk_img" src="../img/icon/person.svg" alt="">
+                    <b>마이페이지</b>
+                </li>
+                <li class="q_cart">
+                    <img class="qk_img" src="../img/icon/bag.svg" alt="">
+                    <b>장바구니</b>
+                </li>
+            </ul>
+        </header> 
+
+        <!-- 네비 -->
+        <nav class="nav">
+            <ul class="nav_ul">
+                <li>BEST</li>
+                <li class="nav_li_women">WOMEN</li> 
+                <li class="nav_li_men">MEN</li>
+                <li class="nav_li_life">LIFE</li>
+                <li class="nav_li_elec">ELECTRONICS</li>
+                <li class="nav_li_beauty">BEAUTY</li>
+                <li class="nav_li_food">FOOD</li>
+                <li>LIVE</li>
+                <li>#ONLY HAGO</li>
+                <li>EVENT</li>
+                <li>BRAND</li>
+                <li>래플</li>
+                <li>#FW신상</li>
+            </ul>
+            <div class="nav_pan">
+                <div class="nav_pan_women">
+                    <div class="nav_pan_inner">
+                        <ul class="women">
+                            <li>의류 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>상의</li>
+                            <li>원피스</li>
+                            <li>점프수트</li>
+                            <li>바지</li>
+                            <li>아우터</li>
+                            <li>스커트</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="women">
+                            <li>가방 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>숄더백</li>
+                            <li>토트백</li>
+                            <li>크로스백</li>
+                            <li>에코,캔버스백</li>
+                            <li>백팩</li>
+                            <li>클러치</li>
+                            <li>파우치</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="women">
+                            <li>신발 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>플랫,로퍼</li>
+                            <li>부츠</li>
+                            <li>펌프스</li>
+                            <li>샌들</li>
+                            <li>슬리퍼,뮬</li>
+                            <li>스니커즈</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="women">
+                            <li>액세서리 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>주얼리</li>
+                            <li>모자</li>
+                            <li>시계</li>
+                            <li>지갑,카드케이스</li>
+                            <li>아이웨어</li>
+                            <li>벨트</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_pan_men">
+                    <div class="nav_pan_inner">
+                        <ul class="men">
+                            <li>의류 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>아우터</li>
+                            <li>상의</li>
+                            <li>하의</li>
+                            <li>이너웨어</li>
+                            <li>니트웨어</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="men">
+                            <li>가방 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXCLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>크로스백</li>
+                            <li>웨이스트백</li>
+                            <li>토트백</li>
+                            <li>숄더백</li>
+                            <li>랩탑백</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="men">
+                            <li>신발 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>스니커즈</li>
+                            <li>로퍼</li>
+                            <li>구두</li>
+                            <li>부츠</li>
+                            <li>샌들</li>
+                            <li>슈즈 액세서리</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="men">
+                            <li>액세서리 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>모자</li>
+                            <li>시계</li>
+                            <li>아이웨어</li>
+                            <li>넥타이</li>
+                            <li>벨트</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_pan_life">
+                    <div class="nav_pan_inner">
+                        <ul class="life">
+                            <li>홈데코 〉</li>
+                            <li>조명</li>
+                            <li>시계</li>
+                            <li>거울</li>
+                            <li>액자/포스터</li>
+                            <li>오브제/소품</li>
+                            <li>캔들/디퓨저</li>
+                            <li>수납</li>
+                            <li>가든</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="life">
+                            <li>키친 〉</li>
+                            <li>식기</li>
+                            <li>용기</li>
+                            <li>세팅</li>
+                            <li>조리도구</li>
+                            <li>수납/정리</li>
+                            <li>보틀</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="life">
+                            <li>패브릭 〉</li>
+                            <li>이불/블랭킷/커버</li>
+                            <li>베개/쿠션</li>
+                            <li>베딩세트</li>
+                            <li>커튼/러그</li>
+                            <li>주방</li>
+                            <li>라운지웨어</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="life">
+                            <li>침대/화장대</li>
+                            <li>소파</li>
+                            <li>식탁/테이블</li>
+                            <li>서랍/수납</li>
+                            <li>의자</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_pan_electronics">
+                    <div class="nav_pan_inner">
+                        <ul class="electronics">
+                            <li>가전 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>영상가전</li>
+                            <li>주방가전</li>
+                            <li>세탁기,건조기</li>
+                            <li>생활가전</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="electronics">
+                            <li>　</li>
+                            <li>계절가전</li>
+                            <li>미용가전</li>
+                            <li>건강가전</li>
+                            <li>리퍼브</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_pan_beauty">
+                    <div class="nav_pan_inner">
+                        <ul class="beauty">
+                            <li>뷰티 〉</li>
+                            <li>스킨/바디케어</li>
+                            <li>코스메틱</li>
+                            <li>비누/세정제</li>
+                            <li>칫솔/치약</li>
+                            <li>뷰티 디바이스</li>
+                            <li>실내 운동용품</li>
+                            <li>위생 용품</li>
+                        </ul>
+                    </div>
+                  
+                </div>
+                <div class="nav_pan_food">
+                    <div class="nav_pan_inner">
+                        <ul class="food">
+                            <li>푸드 〉</li>
+                            <li>음료/청/커피</li>
+                            <li>간식/디저트류</li>
+                            <li>식사/반찬류</li>
+                            <li>조미료/장류</li>
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </nav>  
+
+
+
+        <!-- 본문 시작 -->
+        <main class="container">
+            <section class="detail_area">
+
+                <!-- 상품 이미지 -->
+                <div class="img_box">
+                    <div class="big_img">
+                        <img src="https://image.hago.kr/mall/goods/000/000/326/251/view_1.jpg?updated_at=20230918113051" alt="">
+                        <div class="magnigier" style="background: url(https://image.hago.kr/mall/goods/000/000/326/251/view_1.jpg?updated_at=20230918113051);"></div>
+                    </div>
+                    <div class="sm_img">
+                        <img src="https://image.hago.kr/mall/goods/000/000/326/251/view_1.jpg?updated_at=20230918113051" alt="">
+                        <img src="https://image.hago.kr/mall/goods/000/000/326/251/view_2.jpg?updated_at=20230918113051" alt="">
+                        <img src="https://image.hago.kr/mall/goods/000/000/326/251/view_3.jpg?updated_at=20230918113051" alt="">
+                        <img src="https://image.hago.kr/mall/goods/000/000/326/251/view_4.jpg?updated_at=20230918113051" alt="">
+                        <img src="https://image.hago.kr/mall/goods/000/000/326/251/view_5.jpg?updated_at=20230918113051" alt="">
+                        <img src="https://image.hago.kr/mall/goods/000/000/326/251/view_6.jpg?updated_at=20230918113051" alt="">
+                    </div>
+                </div>
+
+                <!-- 상품 정보 -->
+                <div class="info_box">
+                    <!--  -->
+                    <div class="item_info">
+                        <!--  -->
+                        <div class="item_brand">ETMON</div>
+                        <div class="item_title">[FW아우터특가] Fringe Detail Tweed Jacket, Sky Blue</div>
+                        <div class="item_price"><p>22%</p><p id="each_price"></p><p>원</p><p>280,000원</p></div>
+                        <div class="item_benefit_box">
+                            <div class="item_benefit_top">
+                                <div>하고 고객을 위한 혜택</div>
+                                <div class="coupon">
+                                    <div>쿠폰받기</div>
+                                    <img src="../img/icon/download.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="item_benefit_bot">
+                                <div>최대할인가</div>
+                                <div>134,100원</div>
+                            </div>
+                        </div>
+                        <div class="item_delv">
+                            <ul class="delv">
+                                <li>배송정보</li>
+                                <li>
+                                    <p>배송비 3,000원</p>
+                                    <p>무료배송 조건 100,000원~</p>
+                                </li>
+                            </ul>
+                            <ul class="card_bnft">
+                                <li>혜택</li>
+                                <li>9월 신용카드 무이자 할부 이벤트 　〉</li>
+                            </ul>
+                        </div>
+
+
+                        <form action="">
+                                <div class="item_option">
+                                    <div class="size_chart">
+                                        <p>사이즈 차트</p>
+                                    </div>
+                                    <div class="opt_color">
+                                        <p>색 옵션</p>
+                                        <ul>
+                                            <li class="color_icon"><input type="radio" name="color" class="input_color_v" value="black"></li>
+                                            <li class="color_icon"><input type="radio" name="color" class="input_color_v" value="pink"></li>
+                                            <li class="color_icon"><input type="radio" name="color" class="input_color_v" value="skyblue"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="opt_size">
+                                        <p>사이즈 옵션</p>
+                                        <ul>
+                                            <li class="size_icon">S<input  type="radio" name="size" class="input_size_v" value="S"></li>
+                                            <li class="size_icon">M<input  type="radio" name="size" class="input_size_v" value="M"></li>
+                                            <li class="size_icon">L<input  type="radio" name="size" class="input_size_v" value="L"></li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- 옵션 전부 체크하면 나타나는 수량 박스 -->
+                                    <div class="item_count_box">
+                                        <div class="opt_v_txt"></div>
+                                        <div class="opt_box_R">
+                                            <div class="opt_qty">
+                                                <input type="button" value="-" class="o_qty o_qty_btn_L">
+                                                <input type="text" value="1" class="o_qty qty_v">
+                                                <input type="button" value="+" class="o_qty o_qty_btn_R">
+                                            </div>
+                                            <div class="t_price">0</div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                        </form>
+
+
+                        <div class="item_tot_price">
+                            <p>총 상품 금액</p>
+                            <p id="real_t_price">0</p>
+                            <p>원</p>
+                        </div>
+
+                        <div class="cart_pay_btn">
+                            <div class="like">
+                                <div class="heart"></div>
+                            </div>
+                            <div class="cart">장바구니</div>
+                            <div class="pay">구매하기</div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- 상품 정보 디테일 -->
+            <section class="item_detail_tab_box">
+                <div class="item_dtl_menu">
+                    <ul class="dtl_menu">
+                        <li>상세정보</li>
+                        <li>리뷰</li>
+                        <li>상품Q&A </li>
+                        <li>판매자 정보</li>
+                    </ul>
+                </div>
+
+
+                <!-- ★고정★ -->
+                <!-- 스몰 배너 -->
+                <div class="dtl_sm_banner">
+                    <img src="https://image.hago.kr/mall/display/area/2300/2202/214/pc_image.jpg?ut=" alt="">
+                </div>
+
+                <!-- 디테일 영역 시작 -->
+
+                <div class="dtl_tab_area">
+                    <!-- 상품정보 -->
+                    <!-- <div class="tab_detail" id="tab_detail">
+                        <div class="item_no">상품번호 326251</div>
+                        <div class="dtl_img_area">
+                            <img src="../img/item_img/ETMON/326251/ETMON_326251_(1).jpg" alt="">
+                            <img src="../img/item_img/ETMON/326251/ETMON_326251_(2).jpg" alt="">
+                            <img src="../img/item_img/ETMON/326251/ETMON_326251_(3).jpg" alt="">
+                            <img src="../img/item_img/ETMON/326251/ETMON_326251_(4).jpg" alt="">
+                            <img src="../img/item_img/ETMON/326251/ETMON_326251_(5).jpg" alt="">
+                            <img src="../img/item_img/ETMON/326251/ETMON_326251_(6).jpg" alt="">
+                            <img src="../img/item_img/ETMON/326251/ETMON_326251_(7).jpg" alt="">
+                            <img src="../img/item_img/ETMON/326251/ETMON_326251_(8).jpg" alt="">
+                        </div>
+                        <div class="tab_dtl_desc">
+                            <div class="item_desc_top">
+                                <p>상품 일반 정보</p>
+                                <ul>
+                                    <li>상품번호</li>
+                                    <li>326251</li>
+                                </ul>
+                                <ul>
+                                    <li>브랜드</li>
+                                    <li>ETMON</li>
+                                </ul>
+                                <ul>
+                                    <li>원산지</li>
+                                    <li>국산(서울특별시 중구)</li>
+                                </ul>
+                            </div>
+                            <div class="item_desc_bot">
+                                <p>상품정보고시</p>
+                                <ul>
+                                    <li>제품 소재</li>
+                                    <li>상세페이지참조</li>
+                                </ul>
+                                <ul>
+                                    <li>색상</li>
+                                    <li>상세페이지참조</li>
+                                </ul>
+                                <ul>
+                                    <li>치수</li>
+                                    <li>상세페이지참조</li>
+                                </ul>
+                                <ul>
+                                    <li>제조자(수입자)</li>
+                                    <li>상세페이지참조</li>
+                                </ul>
+                                <ul>
+                                    <li>제조국</li>
+                                    <li>상세페이지참조</li>
+                                </ul>
+                                <ul>
+                                    <li>세탁방법 및 취급시 주의사항</li>
+                                    <li>상세페이지참조</li>
+                                </ul>
+                                <ul>
+                                    <li>제조연월</li>
+                                    <li>상세페이지참조</li>
+                                </ul>
+                                <ul>
+                                    <li>품질보증기준</li>
+                                    <li>상세페이지참조</li>
+                                </ul>
+                                <ul>
+                                    <li>A/S 책임자와 전화번호</li>
+                                    <li>상세페이지참조</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+                    </div> -->
+
+                    <!-- 리뷰 -->
+                    <!-- <div class="tab_review" id="tab_review">
+                        <div class="all_review">전체 리뷰수 0</div>
+                        <div class="review_opt">
+                            <ul class="photo_riview">
+                                <li><img src="../img/icon/check-square.svg" alt=""></li>
+                                <li>포토리뷰</li>
+                            </ul>
+                            <ul class="show_order">
+                                <li>최신순</li>
+                                <li>별점 높은순</li>
+                                <li>별점 낮은순</li>
+                            </ul>
+                        </div>
+                        <div class="review_list">
+                            <div class="review_none">
+                                <div class="review_none_icon"></div>
+                                <p>등록된 리뷰가 아직 없습니다</p>
+                            </div>
+                        </div>
+
+
+                    </div> -->
+
+                    <!-- Q & A -->
+                    <!-- <div class="tab_qna" id="tab_qna">
+                        <div class="qna_txt">판매자에게 상품,배송,취소,교환,반품 등<br>궁금한 내용을 문의하세요 </div>
+                        <div class="qna_icon">상품 문의하기</div>
+                        <div class="qna_list">
+                            <div class="qna_none">
+                                <div class="qna_none_icon"></div>
+                                <p>등록된 문의가 없습니다</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- 판매자 정보 -->
+                    <!-- <div class="tab_seller_info" id="tab_seller_info">
+                        <div class="tab_seller_desc">
+                            <div class="tab_seller_top">
+                                <p>배송 정보</p>
+                                <ul>
+                                    <li>배송처</li>
+                                    <li>업체배송</li>
+                                </ul>
+                                <ul>
+                                    <li>배송택배사</li>
+                                    <li>로젠(KGB)택배</li>
+                                </ul>
+                                <ul>
+                                    <li>배송료</li>
+                                    <li>3,000원</li>
+                                </ul>
+                                <ul>
+                                    <li>배송출발일</li>
+                                    <li>-</li>
+                                </ul>
+                            </div>
+                            <div class="tab_seller_bot">
+                                <p>반품업체 정보</p>
+                                <ul>
+                                    <li>업체명</li>
+                                    <li>ETMON</li>
+                                </ul>
+                                <ul>
+                                    <li>상호/대표자</li>
+                                    <li>박경일 외 1명</li>
+                                </ul>
+                                <ul>
+                                    <li>연락처</li>
+                                    <li>07041513231</li>
+                                </ul>
+                                <ul>
+                                    <li>택배사</li>
+                                    <li>로젠(KGB)택배</li>
+                                </ul>
+                                <ul>
+                                    <li>반품배송비</li>
+                                    <li>구매자 귀책 : 3,000원 (편도)</li>
+                                </ul>
+                                <ul>
+                                    <li>반품지주소</li>
+                                    <li>(4607) 서울특별시 중구 다산로 153 (희승빌딩) 2층(신당동,희승빌딩)</li>
+                                </ul>
+                            </div>
+                            <div class="tab_seller_bot">
+                                <p>교환/반품/환불/취소 안내</p>
+                                <ul class="h_lg">
+                                    <li>교환/반품/환불</li>
+                                    <li>
+                                        <p>교환/반품/환불 기간: 상품 수령 후 7일 이내 청약 철회(교환/반품)가 가능합니다(단, 재화 등의 내용이 표시ㆍ광고 내용과 다르거나 계약 내용과 다르게 이행된 때에는 당해 재화 등을 공급받은 날로부터 3월 이내, 그 사실을 안 날 또는 알 수 있었던 날부터 30일 이내에 청약철회가 가능합니다)</p>
+                                        <p>교환/반품 방법: 마이페이지를 통해 접수 부탁 드립니다</p>
+                                        <p>교환/반품 처리 과정: [교환/반품신청내역]에서 확인 가능합니다</p>
+                                        <p>교환/반품비: 고객님의 단순 변심으로 인한 교환/반품의 경우 비용은 고객님 부담입니다</p>
+                                        <br>
+                                        <p>* 다음의 경우에 해당하는 교환/반품은 청약 철회가 제한됩니다</p>
+                                        <p>교환/반품 불가가 사전 고지된 일부 상품의 경우</p>
+                                        <p>시간의 경과에 따라 재판매가 곤란할 정도로 재화 등의 가치가 현저히 감소한 경우</p>
+                                        <p>복제가 가능한 재화 등의 포장이 훼손된 경우</p>
+                                        <p>소비자의 책임 있는 사유로 상품 등이 멸실 또는 훼손된 경우(단, 상품 확인을 위한 포장 훼손 제외)</p>
+                                        <p>소비자의 주문에 따라 개별적으로 생산되는 상품이 제작에 들어간 경우</p>
+                                    </li>
+                                </ul>
+                                <ul class="h_sm">
+                                    <li style="width: 13.2%;">취소</li>
+                                    <li>
+                                        <p>모든 상품은 배송준비중 단계까지 취소 신청 가능합니다.</p>
+                                        <p>주문제작/해외배송 상품의 경우 취소 신청 후 판매자의 주문 취소 확인이 필요합니다.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+
+
+                <!-- ★고정★ -->
+                <!-- 릴레이티드 아이템 RELATED ITEMS -->
+                <section class="rlt_box">
+                    <div class="rlt_title">
+                        <p>RELATED ITEMS</p>
+                    </div>
+                    <div class="rlt_item_box">
+                        <!--  스크립트 loop -->
+                        <div class="rlt_item">
+                            <div class="rlt_img">
+                                <img src="https://image.hago.kr/mall/goods/000/000/395/507/1.jpg?updated_at=20230918180304
+                                " alt="">
+                            </div>
+                            <div class="rlt_desc">
+                                <p class="rlt_item_title">DUNST FOR MEN</p>
+                                <p class="rlt_item_info">UNISEX OPEN COLLAR KNIT CARDIGAN LIGHT MEANGE GREY_M_UDSW...</p>
+                                <ul class="rlt_item_price">
+                                    <li>107,100원</li>
+                                    <li>10%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rlt_item">
+                            <div class="rlt_img">
+                                <img src="https://image.hago.kr/mall/goods/000/000/191/334/1.jpg?updated_at=20230918120929
+                                " alt="">
+                            </div>
+                            <div class="rlt_desc">
+                                <p class="rlt_item_title">DUNST FOR MEN</p>
+                                <p class="rlt_item_info">UNISEX OPEN COLLAR KNIT CARDIGAN LIGHT MEANGE GREY_M_UDSW...</p>
+                                <ul class="rlt_item_price">
+                                    <li>107,100원</li>
+                                    <li>10%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rlt_item">
+                            <div class="rlt_img">
+                                <img src="https://image.hago.kr/mall/goods/000/000/393/758/1.jpg?updated_at=20230918193334
+                                " alt="">
+                            </div>
+                            <div class="rlt_desc">
+                                <p class="rlt_item_title">DUNST FOR MEN</p>
+                                <p class="rlt_item_info">UNISEX OPEN COLLAR KNIT CARDIGAN LIGHT MEANGE GREY_M_UDSW...</p>
+                                <ul class="rlt_item_price">
+                                    <li>107,100원</li>
+                                    <li>10%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rlt_item">
+                            <div class="rlt_img">
+                                <img src="https://image.hago.kr/mall/goods/000/000/393/759/1.jpg?updated_at=20230918131608
+                                " alt="">
+                            </div>
+                            <div class="rlt_desc">
+                                <p class="rlt_item_title">DUNST FOR MEN</p>
+                                <p class="rlt_item_info">UNISEX OPEN COLLAR KNIT CARDIGAN LIGHT MEANGE GREY_M_UDSW...</p>
+                                <ul class="rlt_item_price">
+                                    <li>107,100원</li>
+                                    <li>10%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rlt_item">
+                            <div class="rlt_img">
+                                <img src="https://image.hago.kr/mall/goods/000/000/393/004/1.jpg?updated_at=20230918202627
+                                " alt="">
+                            </div>
+                            <div class="rlt_desc">
+                                <p class="rlt_item_title">DUNST FOR MEN</p>
+                                <p class="rlt_item_info">UNISEX OPEN COLLAR KNIT CARDIGAN LIGHT MEANGE GREY_M_UDSW...</p>
+                                <ul class="rlt_item_price">
+                                    <li>107,100원</li>
+                                    <li>10%</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="rlt_item">
+                            <div class="rlt_img">
+                                <img src="https://image.hago.kr/mall/goods/000/000/394/659/1.jpg?updated_at=20230918203929
+                                " alt="">
+                            </div>
+                            <div class="rlt_desc">
+                                <p class="rlt_item_title">DUNST FOR MEN</p>
+                                <p class="rlt_item_info">UNISEX OPEN COLLAR KNIT CARDIGAN LIGHT MEANGE GREY_M_UDSW...</p>
+                                <ul class="rlt_item_price">
+                                    <li>107,100원</li>
+                                    <li>10%</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        
+        <!-- 푸터 -->
+        <footer class="footer">
+            <div class="f_menu">
+                <ul class="f_menu_L">
+                    <li>개인정보처리방침</li>
+                    <li>서비스이용약관</li>
+                    <li>청소년 보호정책</li>
+                    <li>사업자정보확인</li>
+                    <li>구매안전서비스가입사실확인</li>
+                </ul>
+                <ul class="f_menu_R">
+                    <li>회사소개</li>
+                    <li>고객센터</li>
+                    <li>공지사항</li>
+                    <li>입점 및 제휴문의</li>
+                </ul>
+            </div>
+            <ul class="f_hago_info">
+                <li class="f_hg_logo"></li>
+                <li class="hg_cpny_info">
+                    <p>주식회사 하고하우스</p>
+                    <p>대표이사 : 홍정우</p>
+                    <p>경기도 성남시 분당구 판교로242, 에이동 3층 301호 일부</p>
+                    <p>(통칭303호) (삼평동,판교 디지털센터)</p>
+                    <p>통신판매업 신고번호 제2023-성남분당A-0276호</p>
+                    <p>사업자번호:820-88-00547</p>
+                    <p>개인정보관리책임자:박대성</p>
+                </li>
+                <li class="hg_cs">
+                    <p>고객센터</p>
+                    <p>대표전화: 1670-3212</p>
+                    <p>운영시간: AM 10:00 ~ PM: 06:00 (월~금)</p>
+                    <p>점심시간: PM 12:30 ~ 13:30 (주말 및 공휴일 휴무)</p>
+                    <p>이메일: cs@hago.kr</p>
+                </li>
+                <li class="hg_safe">
+                    <p>구매안전 서비스</p>
+                    <p>고객님은 안전거래를 위해 현금등으로 결제 시 저희</p>
+                    <p>쇼핑몰에 가입한 <b>토스페이먼츠 구매안전서비스</b>를 이용</p>
+                    <p>하실 수 있습니다</p>
+                    <p>하고에서 판매되는 모든 상품은 주식회사 하고하우스</p>
+                    <p>에서 책임을 지고 있습니다</p>
+                </li>
+            </ul>
+            <p class="f_hg_ww">ⓒ 2021 HAGOHAUS Inc. ALL RIGHTS RESERVED.</p>
+        </footer>
+    </div>
+
+    <script src="../js/2. detail.js"></script>
+    <script src="../js/1. index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+
+
+    <!-- swiper -->
+
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+</body>
+</html>

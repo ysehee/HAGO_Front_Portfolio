@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pf_로그인_라이징 패션 플랫폼 - 하고</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="icon" type="image/png" href="https://image.hago.kr/mall/ui/pc/common/favicon.ico">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/1. index.css">
+    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../CSS/4. join1.css">
+    <link rel="stylesheet" href="../CSS/5 .join2.css">
+    <link rel="stylesheet" href="../CSS/3. login.css">
+    <link rel="stylesheet" href="../CSS/00.swiper.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <!-- 헤더 -->
+        <header class="header">
+            <div class="logo">
+                <a href="file:///F:/KH_ED/HAGO_pf_%EC%9C%A4%EC%84%B8%ED%9D%AC/HTML/1.%20index.html">로고</a>
+            </div>
+            <div class="search_box">
+                <input type="text" class="searh_bar">
+                <div class="search_icon">
+                    <img src="../img/icon/search.svg" alt="">
+                </div>
+            </div>
+            <ul class="quick_menu">
+                <li class="q_login">
+                    <img class="qk_img" src="../img/icon/login.svg" alt="">
+                        <b>로그인</b>
+                </li>
+                <li class="q_join">
+                    <img class="qk_img" src="../img/icon/join.svg" alt="">
+                    <b>회원가입</b>
+                </li>
+                <li class="q_mypage">
+                    <img class="qk_img" src="../img/icon/person.svg" alt="">
+                    <b>마이페이지</b>
+                </li>
+                <li class="q_cart">
+                    <img class="qk_img" src="../img/icon/bag.svg" alt="">
+                    <b>장바구니</b>
+                </li>
+            </ul>
+        </header> 
+
+        <!-- 네비 -->
+        <nav class="nav">
+            <ul class="nav_ul">
+                <li>BEST</li>
+                <li class="nav_li_women">WOMEN</li> 
+                <li class="nav_li_men">MEN</li>
+                <li class="nav_li_life">LIFE</li>
+                <li class="nav_li_elec">ELECTRONICS</li>
+                <li class="nav_li_beauty">BEAUTY</li>
+                <li class="nav_li_food">FOOD</li>
+                <li>LIVE</li>
+                <li>#ONLY HAGO</li>
+                <li>EVENT</li>
+                <li>BRAND</li>
+                <li>래플</li>
+                <li>#FW신상</li>
+            </ul>
+            <div class="nav_pan">
+                <div class="nav_pan_women">
+                    <div class="nav_pan_inner">
+                        <ul class="women">
+                            <li>의류 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>상의</li>
+                            <li>원피스</li>
+                            <li>점프수트</li>
+                            <li>바지</li>
+                            <li>아우터</li>
+                            <li>스커트</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="women">
+                            <li>가방 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>숄더백</li>
+                            <li>토트백</li>
+                            <li>크로스백</li>
+                            <li>에코,캔버스백</li>
+                            <li>백팩</li>
+                            <li>클러치</li>
+                            <li>파우치</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="women">
+                            <li>신발 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>플랫,로퍼</li>
+                            <li>부츠</li>
+                            <li>펌프스</li>
+                            <li>샌들</li>
+                            <li>슬리퍼,뮬</li>
+                            <li>스니커즈</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="women">
+                            <li>액세서리 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>주얼리</li>
+                            <li>모자</li>
+                            <li>시계</li>
+                            <li>지갑,카드케이스</li>
+                            <li>아이웨어</li>
+                            <li>벨트</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_pan_men">
+                    <div class="nav_pan_inner">
+                        <ul class="men">
+                            <li>의류 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>아우터</li>
+                            <li>상의</li>
+                            <li>하의</li>
+                            <li>이너웨어</li>
+                            <li>니트웨어</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="men">
+                            <li>가방 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXCLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>크로스백</li>
+                            <li>웨이스트백</li>
+                            <li>토트백</li>
+                            <li>숄더백</li>
+                            <li>랩탑백</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="men">
+                            <li>신발 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>스니커즈</li>
+                            <li>로퍼</li>
+                            <li>구두</li>
+                            <li>부츠</li>
+                            <li>샌들</li>
+                            <li>슈즈 액세서리</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="men">
+                            <li>액세서리 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>EXVLUSIVE</li>
+                            <li>하이엔드</li>
+                            <li>모자</li>
+                            <li>시계</li>
+                            <li>아이웨어</li>
+                            <li>넥타이</li>
+                            <li>벨트</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_pan_life">
+                    <div class="nav_pan_inner">
+                        <ul class="life">
+                            <li>홈데코 〉</li>
+                            <li>조명</li>
+                            <li>시계</li>
+                            <li>거울</li>
+                            <li>액자/포스터</li>
+                            <li>오브제/소품</li>
+                            <li>캔들/디퓨저</li>
+                            <li>수납</li>
+                            <li>가든</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="life">
+                            <li>키친 〉</li>
+                            <li>식기</li>
+                            <li>용기</li>
+                            <li>세팅</li>
+                            <li>조리도구</li>
+                            <li>수납/정리</li>
+                            <li>보틀</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="life">
+                            <li>패브릭 〉</li>
+                            <li>이불/블랭킷/커버</li>
+                            <li>베개/쿠션</li>
+                            <li>베딩세트</li>
+                            <li>커튼/러그</li>
+                            <li>주방</li>
+                            <li>라운지웨어</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="life">
+                            <li>침대/화장대</li>
+                            <li>소파</li>
+                            <li>식탁/테이블</li>
+                            <li>서랍/수납</li>
+                            <li>의자</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_pan_electronics">
+                    <div class="nav_pan_inner">
+                        <ul class="electronics">
+                            <li>가전 〉</li>
+                            <li>ALL</li>
+                            <li>NEW</li>
+                            <li>영상가전</li>
+                            <li>주방가전</li>
+                            <li>세탁기,건조기</li>
+                            <li>생활가전</li>
+                        </ul>
+                    </div>
+                    <div class="nav_pan_inner">
+                        <ul class="electronics">
+                            <li>　</li>
+                            <li>계절가전</li>
+                            <li>미용가전</li>
+                            <li>건강가전</li>
+                            <li>리퍼브</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav_pan_beauty">
+                    <div class="nav_pan_inner">
+                        <ul class="beauty">
+                            <li>뷰티 〉</li>
+                            <li>스킨/바디케어</li>
+                            <li>코스메틱</li>
+                            <li>비누/세정제</li>
+                            <li>칫솔/치약</li>
+                            <li>뷰티 디바이스</li>
+                            <li>실내 운동용품</li>
+                            <li>위생 용품</li>
+                        </ul>
+                    </div>
+                  
+                </div>
+                <div class="nav_pan_food">
+                    <div class="nav_pan_inner">
+                        <ul class="food">
+                            <li>푸드 〉</li>
+                            <li>음료/청/커피</li>
+                            <li>간식/디저트류</li>
+                            <li>식사/반찬류</li>
+                            <li>조미료/장류</li>
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+        </nav> 
+
+
+        <!-- 로그인 -->
+        <section class="login_box">
+
+        <form action="#" class="login_form" id="login_form" method="get"> 
+            <p class="login_title">로그인</p>
+            <ul class="login_id">
+                <li>아이디</li>
+                <input type="text" id="login_user_id" name="idVal" class="input_login" required>
+            </ul>
+            <ul class="login_pw">
+                <li>비밀번호</li>
+                <input type="password" id="login_user_pw" name="passVal" class="input_login" required>
+            </ul>
+
+            <div class="id_sv_box">
+                <input type="checkbox" id="id_sv">
+                <p>아이디 저장</p>
+            </div>
+
+            <div class="login_guide">
+                <p><b>기존 가입고객</b>은 최초1회 비밀번호 변경 후 사용 가능합니다.</p>
+                <div class="go_btn">GO 〉</div>
+            </div>
+
+            <div class="multi_btn_box">
+                <input type="button" class="login_btn" id="login_btn" value="로그인">
+                <!-- <input type="submit" class="join_btn" value="회원가입"> -->
+            </div>
+
+            <ul class="find_acc">
+                <li>아이디 찾기</li>
+                <li>비밀번호 찾기</li>
+                <li>비회원 주문하기</li>
+                <li>비회원 주문조회</li>
+            </ul>
+
+            <div class="socl_icon_box">
+                <img class="naver_icon" src="../img/icon/naver.png" alt="">
+                <img class="kakao_icon" src="../img/icon/free-icon-kakao-talk-4494622.png" alt="">
+            <div>
+        </form>
+        </section>
+
+
+
+
+        <!-- 푸터 -->
+        <footer class="footer">
+            <div class="f_menu">
+                <ul class="f_menu_L">
+                    <li>개인정보처리방침</li>
+                    <li>서비스이용약관</li>
+                    <li>청소년 보호정책</li>
+                    <li>사업자정보확인</li>
+                    <li>구매안전서비스가입사실확인</li>
+                </ul>
+                <ul class="f_menu_R">
+                    <li>회사소개</li>
+                    <li>고객센터</li>
+                    <li>공지사항</li>
+                    <li>입점 및 제휴문의</li>
+                </ul>
+            </div>
+            <ul class="f_hago_info">
+                <li class="f_hg_logo"></li>
+                <li class="hg_cpny_info">
+                    <p>주식회사 하고하우스</p>
+                    <p>대표이사 : 홍정우</p>
+                    <p>경기도 성남시 분당구 판교로242, 에이동 3층 301호 일부</p>
+                    <p>(통칭303호) (삼평동,판교 디지털센터)</p>
+                    <p>통신판매업 신고번호 제2023-성남분당A-0276호</p>
+                    <p>사업자번호:820-88-00547</p>
+                    <p>개인정보관리책임자:박대성</p>
+                </li>
+                <li class="hg_cs">
+                    <p>고객센터</p>
+                    <p>대표전화: 1670-3212</p>
+                    <p>운영시간: AM 10:00 ~ PM: 06:00 (월~금)</p>
+                    <p>점심시간: PM 12:30 ~ 13:30 (주말 및 공휴일 휴무)</p>
+                    <p>이메일: cs@hago.kr</p>
+                </li>
+                <li class="hg_safe">
+                    <p>구매안전 서비스</p>
+                    <p>고객님은 안전거래를 위해 현금등으로 결제 시 저희</p>
+                    <p>쇼핑몰에 가입한 <b>토스페이먼츠 구매안전서비스</b>를 이용</p>
+                    <p>하실 수 있습니다</p>
+                    <p>하고에서 판매되는 모든 상품은 주식회사 하고하우스</p>
+                    <p>에서 책임을 지고 있습니다</p>
+                </li>
+            </ul>
+            <p class="f_hg_ww">ⓒ 2021 HAGOHAUS Inc. ALL RIGHTS RESERVED.</p>
+        </footer>
+    </div>
+    
+    <script src="../js/1. index.js"></script>
+    <script src="../js/3. login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+
+        
+    <!-- swiper -->
+
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+   
+</body>
+</html>
